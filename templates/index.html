@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Book Orders</h1>
+        <ul>
+        {% for order in all_orders  %}
+            <li>
+                <b>Customer Name: </b>{{ order.customer_name }}, <b>Order Date: </b>{{ order.order_date }}, <b>Book Title: </b>{{ order.book_title }}, <b>Quantity:</b> {{ order.quantity }}
+            </li>
+        {% endfor %}
+        </ul>
+        
+    </body>
+</html>
